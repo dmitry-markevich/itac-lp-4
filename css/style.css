@@ -1,0 +1,220 @@
+/* Общие стили */
+
+.lp-wr {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+header ul.nav li {
+    display: inline-block;
+}
+
+header ul.nav li a {
+    padding: 10px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .5s, padding .5s;
+}
+
+header.top ul.nav li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+header ul.nav li.active a,
+header ul.nav li a:hover,
+header ul.nav li a:focus {
+    color: #6f11a8;
+    background: transparent;
+}
+
+section {
+    z-index: 5;
+}
+
+.lp-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.lp-content h2 {
+    color: #6f11a8;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 20px 0
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #6f11a8;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Слайдшоу */
+
+#slideshow .lp-content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.owl-dot span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    opacity: 0.6;
+    transition: background-color .5s;
+}
+
+.owl-dot.active span {
+    background: #6f11a8;
+}
+
+.owl-nav > div {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 100%;
+    margin-top: -20px;
+    opacity: 0.6;
+    transition: opacity .25s;
+    text-align: center;
+}
+
+.owl-nav > div:hover {
+    opacity: 0.8;
+}
+
+.owl-nav > div i {
+    line-height: 40px;
+    font-size: 19px;
+    color: #6f11a8;
+}
+
+.owl-prev {
+    left: 20px;
+}
+
+.owl-next {
+    right: 20px;
+}
+
+
+/* Табуляторы */
+
+.lp-tabs {
+    padding: 20px;
+}
+
+.lp-tabs-titles ul {
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.lp-tabs-titles ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: color .25s, background-color .25s;
+}
+
+.lp-tabs-titles ul li.active,
+.lp-tabs-titles ul li:hover {
+    background: #6f11a8;
+    color: #fff;
+}
+
+.lp-tabs-content {
+    position: relative;
+}
+
+.lp-tab {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+
+/* Модальные окна */
+
+#modals {
+    display: none;
+}
+
+.lp-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+
+/* Цены */
+
+#prices table tr.second {
+    background: #ccc;
+}
+
+#prices table th {
+    background: #6f11a8;
+    color: #fff;
+    text-align: center;
+    -webkit-user-select: none;
+}
+
+#prices table th[ng-click] {
+    cursor: pointer;
+}
+
+#prices table td i {
+    color: red;
+}
+
+
+/* Карта */
+
+#lp-map {
+    height: 400px;
+}
